@@ -10,27 +10,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <!-- ==================== NAVIGATION ==================== -->
 <nav class="navbar" id="navbar">
   <div class="navbar__inner">
     <!-- Logo Upload Area (Left) -->
     <div class="navbar__logo-upload">
-      <label for="logoUpload" class="logo-upload-box">
-        <input type="file" id="logoUpload" accept="image/*" onchange="handleLogoUpload(event)">
         <img src="/asset/photos/logo png.png" alt="Brand Logo" class="logo-image">
       </label>
     </div>
-
     <!-- Brand Name (Center) -->
     <a href="#home" class="navbar__brand">
       Alexandra's Floral
     </a>
-
     <!-- Desktop Nav Links (Right) -->
     <ul class="navbar__links">
       <li><a href="#home">Home</a></li>
@@ -39,7 +33,6 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
-
   <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu">
     <a href="#home" onclick="closeMobileMenu()">Home</a>
@@ -57,14 +50,12 @@
 <!-- ==================== HERO ==================== -->
 <section class="hero" id="home">
   <div class="container">
-
     <div class="hero__content">
-      <h2>Flowers for<br><em>Every Moment</em></h2>
-      <p class="hero__subtitle">Thoughtfully handcrafted bouquets designed to celebrate life's most beautiful moments.</p>
+      <h2>Shop Flowers for<br><em>Every Moment</em></h2>
       
       <div class="hero__buttons">
         <button class="btn-primary" onclick="openWhatsApp()">Order Now</button>
-        <a href="#bouquets" class="btn-secondary">View Collection</a>
+        <a href="#bouquets" class="btn-secondary">View Arrangements</a>
       </div>
 
       <div class="hero__trust">
@@ -73,211 +64,346 @@
         <span>✦ Premium Blooms</span>
       </div>
     </div>
-
-    <div class="hero__image">
-      <div class="image-placeholder">
-        <img src="">
-      </div>
-    </div>
   </div>
 </section>
 
-<!-- ==================== BOUQUETS ==================== -->
+<!-- ==================== FLORAL GALLERY ==================== -->
 <section class="section-white" id="bouquets">
   <div class="container">
     <div class="section-header">
-      <span class="label">Our Collection</span>
-      <h2>Handcrafted With Love</h2>
+      <span class="label">Floral Gallery</span>
+      <h2>Recent Arrangements</h2>
       <div class="rule"></div>
-      <p>Every bouquet is assembled fresh to order, using only premium blooms sourced for their beauty and longevity.</p>
+      <p>
+        Browse a selection of our handcrafted bouquets,
+        bridal flowers and bespoke floral arrangements.
+        Every design is created fresh and can be customised
+        to suit your occasion.
+      </p>
     </div>
-
     <div class="bouquets-grid">
-      <!-- Bouquet 1 -->
+      <!-- Arrangement 1 -->
       <div class="bouquet-card">
         <div class="card-image">
-          <div class="image-placeholder">Blush Romance<br>600 × 700px</div>
+          <img src="/asset/photos/bouquet-1.jpg" alt="Mini Handheld Bouquet">
         </div>
         <div class="card-body">
-          <h3>MiniHandheld Bouquets</h3>
-          <p>Soft pink roses and peonies, wrapped in silk ribbon. Perfect for anniversaries and declarations of love.</p>
-          <div class="card-footer">
-            <span>From <strong>₦35,000</strong></span>
-            <button class="btn-small" onclick="openWhatsApp('I would like to order the minihandheld Bouquet')">Order →</button>
-          </div>
-        </div>
-      </div>
-      <!-- Bouquet 2 -->
-      <div class="bouquet-card">
-        <div class="card-image">
-          <div class="image-placeholder">White Roses<br>600 × 700px</div>
-        </div>
-        <div class="card-body">
-          <h3>Medium Handheld Bouquets</h3>
-          <p>Pristine white roses arranged in an editorial style. The definition of timeless elegance.</p>
-          <div class="card-footer">
-            <span>From <strong>₦35,000</strong></span>
-            <button class="btn-small" onclick="openWhatsApp('I would like to order the Medium Handheld Bouquets')">Order →</button>
-          </div>
+          <h3>Mini Handheld Bouquet</h3>
+          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 1')">
+            Enquire →
+          </button>
         </div>
       </div>
 
-      <!-- Bouquet 3 -->
+      <!-- Arrangement 2 -->
       <div class="bouquet-card">
         <div class="card-image">
-          <div class="image-placeholder">Sunshine Bouquet<br>600 × 700px</div>
+          <img src="/asset/photos/bouquet-2.jpg" alt="Medium Handheld Bouquet">
         </div>
         <div class="card-body">
-          <h3>Handheld Bouquets</h3>
-          <p>Warm yellows and bright oranges — sunflowers, ranunculus, and mimosa to lift any spirit.</p>
-          <div class="card-footer">
-            <span>From <strong>₦150,000</strong></span>
-            <button class="btn-small" onclick="openWhatsApp('I would like to order a handheld Bouquet')">Order →</button>
-          </div>
+          <h3>Medium Handheld Bouquet</h3>
+          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 2')">
+            Enquire →
+          </button>
         </div>
       </div>
 
-      <!-- Bouquet 4 -->
+      <!-- Arrangement 3 -->
       <div class="bouquet-card">
         <div class="card-image">
-          <div class="image-placeholder">Seasonal Blooms<br>600 × 700px</div>
+          <img src="/asset/photos/bouquet-3.jpg" alt="Luxury Bouquet">
         </div>
         <div class="card-body">
-          <h3>Mix arrangement(florist choice)</h3>
-          <p>A curated selection of the freshest seasonal blooms, beautifully boxed for gifting.</p>
-          <div class="card-footer">
-            <span>From <strong>₦18,000</strong></span>
-            <button class="btn-small" onclick="openWhatsApp('I would like to order the Seasonal Bloom Box')">Order →</button>
-          </div>
+          <h3>Luxury Bouquet</h3>
+          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 3')">
+            Enquire →
+          </button>
         </div>
       </div>
 
-      <!-- Bouquet 5 -->
+      <!-- Arrangement 4 -->
       <div class="bouquet-card">
         <div class="card-image">
-          <div class="image-placeholder">Elegant Peonies<br>600 × 700px</div>
+          <img src="/asset/photos/bouquet-4.jpg" alt="Rose Arrangement">
         </div>
         <div class="card-body">
-          <h3>Box arrangement</h3>
-          <p>Lush full peonies in blush and ivory tones — a romantic statement for any occasion.</p>
-          <div class="card-footer">
-            <span>From <strong>₦50,000</strong></span>
-            <button class="btn-small" onclick="openWhatsApp('I would like to order the Elegant Peonies bouquet')">Order →</button>
-          </div>
+          <h3>Rose Arrangement</h3>
+          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 4')">
+            Enquire →
+          </button>
         </div>
       </div>
 
-      <!-- Bouquet 6 -->
-      <div class="bouquet-card featured">
+      <!-- Arrangement 5 -->
+      <div class="bouquet-card">
         <div class="card-image">
-          <span class="badge">Signature</span>
-          <div class="image-placeholder">Signature Alexandra<br>600 × 700px</div>
+          <img src="/asset/photos/bouquet-5.jpg" alt="Box Arrangement">
         </div>
         <div class="card-body">
-          <h3>Bridal Bouquets</h3>
-          <p>Our flagship arrangement. A bespoke creation of the finest blooms, unique to every order.</p>
-          <div class="card-footer">
-            <span>From <strong>₦35,000</strong></span>
-            <button class="btn-small" onclick="openWhatsApp('I would like to order the Signature Alexandra arrangement')">Order →</button>
-          </div>
+          <h3>Box Arrangement</h3>
+          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 5')">
+            Enquire →
+          </button>
+        </div>
+      </div>
+
+      <!-- Arrangement 6 -->
+      <div class="bouquet-card">
+        <div class="card-image">
+          <img src="/asset/photos/bouquet-6.jpg" alt="Bridal Bouquet">
+        </div>
+        <div class="card-body">
+          <h3>Bridal Bouquet</h3>
+          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 6')">
+            Enquire →
+          </button>
+        </div>
+      </div>
+
+      <!-- Arrangement 7 -->
+      <div class="bouquet-card">
+        <div class="card-image">
+          <img src="/asset/photos/bouquet-7.jpg" alt="Seasonal Blooms">
+        </div>
+        <div class="card-body">
+          <h3>Seasonal Blooms</h3>
+          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 7')">
+            Enquire →
+          </button>
+        </div>
+      </div>
+
+      <!-- Arrangement 8 -->
+      <div class="bouquet-card">
+        <div class="card-image">
+          <img src="/asset/photos/bouquet-8.jpg" alt="Luxury Roses">
+        </div>
+        <div class="card-body">
+          <h3>Luxury Roses</h3>
+          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 8')">
+            Enquire →
+          </button>
+        </div>
+      </div>
+
+      <!-- Arrangement 9 -->
+      <div class="bouquet-card">
+        <div class="card-image">
+          <img src="/asset/photos/bouquet-9.jpg" alt="Fresh Flower Box">
+        </div>
+        <div class="card-body">
+          <h3>Fresh Flower Box</h3>
+          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 9')">
+            Enquire →
+          </button>
+        </div>
+      </div>
+
+      <!-- Arrangement 10 -->
+      <div class="bouquet-card">
+        <div class="card-image">
+          <img src="/asset/photos/bouquet-10.jpg" alt="Elegant Bouquet">
+        </div>
+        <div class="card-body">
+          <h3>Elegant Bouquet</h3>
+          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 10')">
+            Enquire →
+          </button>
+        </div>
+      </div>
+
+      <!-- Arrangement 11 -->
+      <div class="bouquet-card">
+        <div class="card-image">
+          <img src="/asset/photos/bouquet-11.jpg" alt="Premium Arrangement">
+        </div>
+        <div class="card-body">
+          <h3>Premium Arrangement</h3>
+          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 11')">
+            Enquire →
+          </button>
+        </div>
+      </div>
+
+      <!-- Arrangement 12 -->
+      <div class="bouquet-card">
+        <div class="card-image">
+          <img src="/asset/photos/bouquet-12.jpg" alt="Signature Bouquet">
+        </div>
+        <div class="card-body">
+          <h3>Signature Bouquet</h3>
+          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 12')">
+            Enquire →
+          </button>
+        </div>
+      </div>
+
+      <!-- Arrangement 13 -->
+      <div class="bouquet-card">
+        <div class="card-image">
+          <img src="/asset/photos/bouquet-13.jpg" alt="Garden Collection">
+        </div>
+        <div class="card-body">
+          <h3>Garden Collection</h3>
+          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 13')">
+            Enquire →
+          </button>
+        </div>
+      </div>
+
+      <!-- Arrangement 14 -->
+      <div class="bouquet-card">
+        <div class="card-image">
+          <img src="/asset/photos/bouquet-14.jpg" alt="Custom Arrangement">
+        </div>
+        <div class="card-body">
+          <h3>Custom Arrangement</h3>
+          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 14')">
+            Enquire →
+          </button>
+        </div>
+      </div>
+
+      <!-- Arrangement 15 -->
+      <div class="bouquet-card">
+        <div class="card-image">
+          <img src="/asset/photos/bouquet-15.jpg" alt="Alexandra Signature Design">
+        </div>
+        <div class="card-body">
+          <h3>Alexandra Signature Design</h3>
+          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 15')">
+            Enquire →
+          </button>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ==================== WHY US ==================== -->
+<!-- ==================== LOCATIONS ==================== -->
 <section class="section-white">
+
   <div class="container">
+
     <div class="section-header">
-      <h2>Why Alexandra's floral ?</h2>
+      <span class="label">Our Locations</span>
+      <h2>Delivering Across Nigeria</h2>
       <div class="rule"></div>
+
+      <p>
+        Alexandra's Floral proudly serves customers across
+        Ibadan, Lagos and Abuja.
+      </p>
     </div>
 
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon">🌹</div>
-        <h3>Premium Fresh Flowers</h3>
-        <p>We source only the finest blooms — handpicked for their freshness, colour, and lasting beauty.</p>
+    <div class="cities-grid">
+
+      <!-- IBADAN -->
+      <div class="city-card">
+        <img src="/asset/photos/ibadan-moko-pic.jpg" alt="Ibadan">
+
+        <div class="city-overlay">
+          <h3>Ibadan</h3>
+        </div>
       </div>
 
-      <div class="feature-card">
-        <div class="feature-icon">🚗</div>
-        <h3>Same-Day Delivery</h3>
-        <p>Order and we deliver to your door the same day, anywhere within Ibadan, Abuja, Lagos.</p>
+      <!-- LAGOS -->
+      <div class="city-card">
+        <img src="/asset/photos/lagos-pic.jpg" alt="Lagos">
+
+        <div class="city-overlay">
+          <h3>Lagos</h3>
+        </div>
       </div>
 
-      <div class="feature-card">
-        <div class="feature-icon">✨</div>
-        <h3>Handcrafted Designs</h3>
-        <p>Every arrangement is crafted by hand, with care and intention, never from a template.</p>
+      <!-- ABUJA -->
+      <div class="city-card">
+        <img src="/asset/photos/abuja-pic.jpg" alt="Abuja">
+
+        <div class="city-overlay">
+          <h3>Abuja</h3>
+        </div>
       </div>
 
-      <div class="feature-card">
-        <div class="feature-icon">🎨</div>
-        <h3>Custom Arrangements</h3>
-        <p>Tell us your vision. We'll design a bespoke bouquet tailored precisely to your occasion.</p>
-      </div>
     </div>
+
   </div>
 </section>
-
-<!-- ==================== OCCASIONS ==================== -->
-<section class="section-white">
-  <div class="container">
-    <div class="section-header">
-      <span class="label">Every Occasion</span>
-      <h2>Flowers for Every Chapter</h2>
-      <div class="rule"></div>
-      <p>Whatever the moment calls for, we have the perfect bloom to say it beautifully.</p>
-    </div>
-
-    <div class="occasions-grid">
-      <button class="occasion-tile" onclick="openWhatsApp('I would like to order birthday flowers')">
-        <span class="occasion-emoji">🎂</span>
-        <span>Handheld Floral Arrangements</span>
-        <span class="occasion-cta">Order →</span>
-      </button>
-
-      <button class="occasion-tile" onclick="openWhatsApp('I would like to order bridal a bouquet')">
-        <span class="occasion-emoji">💍</span>
-        <span>Bridal Bouquets</span>
-        <span class="occasion-cta">Order →</span>
-      </button>
-
-      <button class="occasion-tile" onclick="openWhatsApp('I would like to order a burial wreath')">
-        <span class="occasion-emoji">🎉</span>
-        <span>Burial Wreaths</span>
-        <span class="occasion-cta">Order →</span>
-      </button>      
-    </div>
-  </div>
-</section>
-
 <!-- ==================== ABOUT ==================== -->
 <section class="section-white" id="about">
+
   <div class="container">
+
     <div class="about-grid">
+
+      <!-- TEXT -->
       <div class="about-content">
+
         <span class="label">Our Story</span>
-        <h2>The Art of Thoughtful Gifting</h2>
+
+        <h2>
+          Bringing Beautiful Flowers To Everyday Nigerians
+        </h2>
+
         <div class="rule"></div>
 
-        <p class="lead">At Alexandra's Floral, we believe flowers speak when words fall short.</p>
+        <p class="lead">
+          Alexandra's Floral was founded on a simple belief<br><em>"flowers should not be a luxury reserved only for special occasions".
+</em>
+        </p>
 
-        <p>Every bouquet is carefully designed to create meaningful moments and lasting impressions. From intimate gestures to grand celebrations, we approach each arrangement as its own small work of art.</p>
+        <p>
+          We started Alexandra's Floral to make thoughtfully designed floral
+          arrangements more accessible, affordable and available to everyday
+          Nigerians. Whether it's a birthday, a romantic gesture, a celebration,
+          or simply a way to brighten someone's day, we believe flowers have the
+          power to create meaningful moments.
+        </p>
 
-        <p>We source only the freshest, most beautiful blooms — then hand-arrange every stem with precision and care. Because the person receiving your gift deserves nothing less than extraordinary.</p>
+        <div class="about-block">
 
-      </div>
+          <h3>Our Mission</h3>
 
-      <div class="about-image">
-        <div class="image-placeholder">
-          Studio portrait<br>600 × 700px
+          <p>
+            To create beautiful floral experiences that help people celebrate,
+            connect and express themselves through thoughtfully crafted flower
+            arrangements.
+          </p>
+
         </div>
+
+        <div class="about-block">
+
+          <h3>Our Vision</h3>
+
+          <p>
+            To become Nigeria's most trusted floral brand, making fresh flowers
+            an accessible part of everyday gifting and celebration across the
+            country.
+          </p>
+
+        </div>
+
       </div>
+
+      <!-- IMAGE -->
+      <div class="about-image">
+
+        <img
+          src="/asset/photos/viv-la-viv.jpg"
+          alt="Founder and Creative Director">
+
+        <div class="founder-caption">
+          <strong>Vivian Nnabue</strong><br>
+          Founder & Creative Director
+        </div>
+
+      </div>
+
     </div>
+
   </div>
+
 </section>
 
 <!-- ==================== TESTIMONIALS ==================== -->
