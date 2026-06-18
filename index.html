@@ -16,10 +16,9 @@
 <!-- ==================== NAVIGATION ==================== -->
 <nav class="navbar" id="navbar">
   <div class="navbar__inner">
-    <!-- Logo Upload Area (Left) -->
+    <!-- Logo (Left) -->
     <div class="navbar__logo-upload">
-        <img src="/asset/photos/logo png.png" alt="Brand Logo" class="logo-image">
-      </label>
+      <img src="/asset/photos/logo png.png" alt="Alexandra's Floral Logo" class="logo-image">
     </div>
     <!-- Brand Name (Center) -->
     <a href="#home" class="navbar__brand">
@@ -32,249 +31,105 @@
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <!-- Hamburger Menu (Mobile) -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
   <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#home" onclick="closeMobileMenu()">Home</a>
-    <a href="#bouquets" onclick="closeMobileMenu()">Bouquets</a>
-    <a href="#about" onclick="closeMobileMenu()">About</a>
-    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+    <a href="#home">Home</a>
+    <a href="#bouquets">Bouquets</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
   </div>
 </nav>
 
 <!-- ==================== FLOATING WHATSAPP BUTTON ==================== -->
-<button class="whatsapp-float" onclick="openWhatsApp()" title=" chat with us">
-  💬 chat us
-</button>
+<a
+  href="https://wa.me/message/IPJ3FHFSA4XUF1"
+  target="_blank"
+  class="whatsapp-float"
+  title="Chat with us on WhatsApp">
+  💬 Chat Us
+</a>
 
 <!-- ==================== HERO ==================== -->
 <section class="hero" id="home">
   <div class="container">
     <div class="hero__content">
-      <h2>Shop Flowers for<br><em>Every Moment</em></h2>
+      <h1>Flowers for<br><em>Every Moment</em></h1>
       
       <div class="hero__buttons">
-        <button class="btn-primary" onclick="openWhatsApp()">Order Now</button>
-        <a href="#bouquets" class="btn-secondary">View Arrangements</a>
-      </div>
-
-      <div class="hero__trust">
-        <span>✦ Same-Day Delivery</span>
-        <span>✦ Handcrafted Daily</span>
-        <span>✦ Premium Blooms</span>
-      </div>
-    </div>
+        <a
+          href="https://wa.me/message/IPJ3FHFSA4XUF1"
+          target="_blank"
+          class="btn-primary">
+          Shop Now
+        </a>
+    
   </div>
 </section>
 
-<!-- ==================== FLORAL GALLERY ==================== -->
+<!-- ==================== BOUQUETS SECTION ==================== -->
 <section class="section-white" id="bouquets">
   <div class="container">
     <div class="section-header">
-      <span class="label">Floral Gallery</span>
-      <h2>Recent Arrangements</h2>
+      <h2>Floral Arrangements</h2>
       <div class="rule"></div>
       <p>
-        Browse a selection of our handcrafted bouquets,
-        bridal flowers and bespoke floral arrangements.
-        Every design is created fresh and can be customised
-        to suit your occasion.
+        Every arrangement is handcrafted with care and designed
+        to celebrate life's most beautiful moments.
       </p>
     </div>
-    <div class="bouquets-grid">
-      <!-- Arrangement 1 -->
-      <div class="bouquet-card">
-        <div class="card-image">
-          <img src="/asset/photos/bouquet-1.jpg" alt="Mini Handheld Bouquet">
-        </div>
-        <div class="card-body">
-          <h3>Mini Handheld Bouquet</h3>
-          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 1')">
-            Enquire →
-          </button>
-        </div>
-      </div>
 
-      <!-- Arrangement 2 -->
-      <div class="bouquet-card">
-        <div class="card-image">
-          <img src="/asset/photos/bouquet-2.jpg" alt="Medium Handheld Bouquet">
-        </div>
-        <div class="card-body">
-          <h3>Medium Handheld Bouquet</h3>
-          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 2')">
-            Enquire →
-          </button>
-        </div>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="/asset/photos/bouquet-1.JPG" alt="Floral arrangement 1">
       </div>
-
-      <!-- Arrangement 3 -->
-      <div class="bouquet-card">
-        <div class="card-image">
-          <img src="/asset/photos/bouquet-3.jpg" alt="Luxury Bouquet">
-        </div>
-        <div class="card-body">
-          <h3>Luxury Bouquet</h3>
-          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 3')">
-            Enquire →
-          </button>
-        </div>
+      <div class="gallery-item">
+        <img src="/asset/photos/bouquet-13.jpg" alt="Floral arrangement 2">
       </div>
-
-      <!-- Arrangement 4 -->
-      <div class="bouquet-card">
-        <div class="card-image">
-          <img src="/asset/photos/bouquet-4.jpg" alt="Rose Arrangement">
-        </div>
-        <div class="card-body">
-          <h3>Rose Arrangement</h3>
-          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 4')">
-            Enquire →
-          </button>
-        </div>
+      <div class="gallery-item">
+        <img src="/asset/photos/bouquet-3.jpg" alt="Floral arrangement 3">
       </div>
-
-      <!-- Arrangement 5 -->
-      <div class="bouquet-card">
-        <div class="card-image">
-          <img src="/asset/photos/bouquet-5.jpg" alt="Box Arrangement">
-        </div>
-        <div class="card-body">
-          <h3>Box Arrangement</h3>
-          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 5')">
-            Enquire →
-          </button>
-        </div>
+      <div class="gallery-item">
+        <img src="/asset/photos/bouquet-4.jpg" alt="Floral arrangement 4">
       </div>
-
-      <!-- Arrangement 6 -->
-      <div class="bouquet-card">
-        <div class="card-image">
-          <img src="/asset/photos/bouquet-6.jpg" alt="Bridal Bouquet">
-        </div>
-        <div class="card-body">
-          <h3>Bridal Bouquet</h3>
-          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 6')">
-            Enquire →
-          </button>
-        </div>
+      <div class="gallery-item">
+        <img src="/asset/photos/bouquet-5.jpg" alt="Floral arrangement 5">
       </div>
-
-      <!-- Arrangement 7 -->
-      <div class="bouquet-card">
-        <div class="card-image">
-          <img src="/asset/photos/bouquet-7.jpg" alt="Seasonal Blooms">
-        </div>
-        <div class="card-body">
-          <h3>Seasonal Blooms</h3>
-          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 7')">
-            Enquire →
-          </button>
-        </div>
+      <div class="gallery-item">
+        <img src="/asset/photos/bouquet-6.jpg" alt="Floral arrangement 6">
       </div>
-
-      <!-- Arrangement 8 -->
-      <div class="bouquet-card">
-        <div class="card-image">
-          <img src="/asset/photos/bouquet-8.jpg" alt="Luxury Roses">
-        </div>
-        <div class="card-body">
-          <h3>Luxury Roses</h3>
-          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 8')">
-            Enquire →
-          </button>
-        </div>
+      <div class="gallery-item">
+        <img src="/asset/photos/bouquet-7.jpg" alt="Floral arrangement 7">
       </div>
-
-      <!-- Arrangement 9 -->
-      <div class="bouquet-card">
-        <div class="card-image">
-          <img src="/asset/photos/bouquet-9.jpg" alt="Fresh Flower Box">
-        </div>
-        <div class="card-body">
-          <h3>Fresh Flower Box</h3>
-          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 9')">
-            Enquire →
-          </button>
-        </div>
+      <div class="gallery-item">
+        <img src="/asset/photos/bouquet-8.jpg" alt="Floral arrangement 8">
       </div>
-
-      <!-- Arrangement 10 -->
-      <div class="bouquet-card">
-        <div class="card-image">
-          <img src="/asset/photos/bouquet-10.jpg" alt="Elegant Bouquet">
-        </div>
-        <div class="card-body">
-          <h3>Elegant Bouquet</h3>
-          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 10')">
-            Enquire →
-          </button>
-        </div>
+      <div class="gallery-item">
+        <img src="/asset/photos/bouquet-9.jpg" alt="Floral arrangement 9">
       </div>
-
-      <!-- Arrangement 11 -->
-      <div class="bouquet-card">
-        <div class="card-image">
-          <img src="/asset/photos/bouquet-11.jpg" alt="Premium Arrangement">
-        </div>
-        <div class="card-body">
-          <h3>Premium Arrangement</h3>
-          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 11')">
-            Enquire →
-          </button>
-        </div>
+      <div class="gallery-item">
+        <img src="/asset/photos/bouquet-10.jpg" alt="Floral arrangement 10">
       </div>
-
-      <!-- Arrangement 12 -->
-      <div class="bouquet-card">
-        <div class="card-image">
-          <img src="/asset/photos/bouquet-12.jpg" alt="Signature Bouquet">
-        </div>
-        <div class="card-body">
-          <h3>Signature Bouquet</h3>
-          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 12')">
-            Enquire →
-          </button>
-        </div>
+      <div class="gallery-item">
+        <img src="/asset/photos/bouquet-11.jpg" alt="Floral arrangement 11">
       </div>
-
-      <!-- Arrangement 13 -->
-      <div class="bouquet-card">
-        <div class="card-image">
-          <img src="/asset/photos/bouquet-13.jpg" alt="Garden Collection">
-        </div>
-        <div class="card-body">
-          <h3>Garden Collection</h3>
-          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 13')">
-            Enquire →
-          </button>
-        </div>
+      <div class="gallery-item">
+        <img src="/asset/photos/bouquet-12.jpg" alt="Floral arrangement 12">
       </div>
-
-      <!-- Arrangement 14 -->
-      <div class="bouquet-card">
-        <div class="card-image">
-          <img src="/asset/photos/bouquet-14.jpg" alt="Custom Arrangement">
-        </div>
-        <div class="card-body">
-          <h3>Custom Arrangement</h3>
-          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 14')">
-            Enquire →
-          </button>
-        </div>
+      <div class="gallery-item">
+        <img src="/asset/photos/bouquet-13.jpg" alt="Floral arrangement 13">
       </div>
-
-      <!-- Arrangement 15 -->
-      <div class="bouquet-card">
-        <div class="card-image">
-          <img src="/asset/photos/bouquet-15.jpg" alt="Alexandra Signature Design">
-        </div>
-        <div class="card-body">
-          <h3>Alexandra Signature Design</h3>
-          <button class="btn-small" onclick="openWhatsApp('I am interested in Arrangement 15')">
-            Enquire →
-          </button>
-        </div>
+      <div class="gallery-item">
+        <img src="/asset/photos/bouquet-14.jpg" alt="Floral arrangement 14">
+      </div>
+      <div class="gallery-item">
+        <img src="/asset/photos/bouquet-15.jpg" alt="Floral arrangement 15">
       </div>
     </div>
   </div>
@@ -282,76 +137,56 @@
 
 <!-- ==================== LOCATIONS ==================== -->
 <section class="section-white">
-
   <div class="container">
-
     <div class="section-header">
       <span class="label">Our Locations</span>
-      <h2>Delivering Across Nigeria</h2>
+      <h2>Serving Multiple Cities</h2>
       <div class="rule"></div>
-
       <p>
         Alexandra's Floral proudly serves customers across
         Ibadan, Lagos and Abuja.
       </p>
     </div>
-
     <div class="cities-grid">
-
       <!-- IBADAN -->
       <div class="city-card">
         <img src="/asset/photos/ibadan-moko-pic.jpg" alt="Ibadan">
-
         <div class="city-overlay">
           <h3>Ibadan</h3>
         </div>
       </div>
-
       <!-- LAGOS -->
       <div class="city-card">
         <img src="/asset/photos/lagos-pic.jpg" alt="Lagos">
-
         <div class="city-overlay">
           <h3>Lagos</h3>
         </div>
       </div>
-
       <!-- ABUJA -->
       <div class="city-card">
         <img src="/asset/photos/abuja-pic.jpg" alt="Abuja">
-
         <div class="city-overlay">
           <h3>Abuja</h3>
         </div>
       </div>
-
     </div>
-
   </div>
 </section>
+
 <!-- ==================== ABOUT ==================== -->
 <section class="section-white" id="about">
-
   <div class="container">
-
     <div class="about-grid">
-
       <!-- TEXT -->
       <div class="about-content">
-
         <span class="label">Our Story</span>
-
         <h2>
           Bringing Beautiful Flowers To Everyday Nigerians
         </h2>
-
         <div class="rule"></div>
-
         <p class="lead">
-          Alexandra's Floral was founded on a simple belief<br><em>"flowers should not be a luxury reserved only for special occasions".
-</em>
+          Alexandra's Floral was founded on a simple belief that <em>"flowers should not be a luxury reserved only for special occasions".</em>
         </p>
-
         <p>
           We started Alexandra's Floral to make thoughtfully designed floral
           arrangements more accessible, affordable and available to everyday
@@ -359,114 +194,82 @@
           or simply a way to brighten someone's day, we believe flowers have the
           power to create meaningful moments.
         </p>
-
         <div class="about-block">
-
           <h3>Our Mission</h3>
-
           <p>
             To create beautiful floral experiences that help people celebrate,
             connect and express themselves through thoughtfully crafted flower
             arrangements.
           </p>
-
         </div>
-
         <div class="about-block">
-
           <h3>Our Vision</h3>
-
           <p>
             To become Nigeria's most trusted floral brand, making fresh flowers
             an accessible part of everyday gifting and celebration across the
             country.
           </p>
-
         </div>
-
       </div>
 
       <!-- IMAGE -->
       <div class="about-image">
-
         <img
           src="/asset/photos/viv-la-viv.jpg"
-          alt="Founder and Creative Director">
-
+          alt="Vivian Nnabue, Founder and Creative Director">
         <div class="founder-caption">
           <strong>Vivian Nnabue</strong><br>
           Founder & Creative Director
         </div>
-
       </div>
-
     </div>
-
   </div>
-
 </section>
 
-<!-- ==================== TESTIMONIALS ==================== -->
-<section class="section-white">
+<!-- ==================== CONTACT ==================== -->
+<section class="section-white" id="contact">
   <div class="container">
     <div class="section-header">
-      <span class="label">Kind Words</span>
-      <h2>What Our Clients Say</h2>
+      <span class="label">Contact Us</span>
+      <h2>Check out our social media</h2>
       <div class="rule"></div>
     </div>
 
-    <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <p class="quote">"</p>
-        <p>The bouquet Alexandra made for my anniversary was absolutely stunning. My husband couldn't believe how beautiful it was. Will definitely be ordering again!</p>
-        <div class="stars">★★★★★</div>
-        <div class="testimonial-author">
-          <div class="avatar">A</div>
-          <div>
-            <p class="author-name">Adaeze O.</p>
-            <p class="author-meta">Lagos · Anniversary</p>
-          </div>
-        </div>
-      </div>
+    <div class="contact-grid">
+      <a href="https://wa.me/message/IPJ3FHFSA4XUF1"
+         target="_blank"
+         class="contact-card">
+         <span>💬</span>
+         <h3>WhatsApp</h3>
+      </a>
 
-      <div class="testimonial-card">
-        <p class="quote">"</p>
-        <p>I ordered a birthday surprise for my mum and it arrived fresh, beautifully wrapped, and on time. She cried happy tears. Alexandra's Floral is magical.</p>
-        <div class="stars">★★★★★</div>
-        <div class="testimonial-author">
-          <div class="avatar">C</div>
-          <div>
-            <p class="author-name">Chidinma N.</p>
-            <p class="author-meta">Abuja · Birthday</p>
-          </div>
-        </div>
-      </div>
+      <a href="https://www.instagram.com/alexandrafloral_/"
+         target="_blank"
+         class="contact-card">
+         <span>📸</span>
+         <h3>Instagram</h3>
+      </a>
 
-      <div class="testimonial-card">
-        <p class="quote">"</p>
-        <p>The Signature Alexandra arrangement is worth every kobo. It transformed our dinner table. Luxurious, fresh, and so thoughtfully arranged.</p>
-        <div class="stars">★★★★★</div>
-        <div class="testimonial-author">
-          <div class="avatar">F</div>
-          <div>
-            <p class="author-name">Funmi A.</p>
-            <p class="author-meta">Ibadan · Dinner Party</p>
-          </div>
-        </div>
-      </div>
+      <a href="https://www.tiktok.com/@alexandrasfloral"
+         target="_blank"
+         class="contact-card">
+         <span>🎵</span>
+         <h3>TikTok</h3>
+      </a>
 
-      <div class="testimonial-card">
-        <p class="quote">"</p>
-        <p>Ordered via WhatsApp and the experience was seamless. The flowers were even better than the photos. I will always choose Alexandra's Floral.</p>
-        <div class="stars">★★★★★</div>
-        <div class="testimonial-author">
-          <div class="avatar">S</div>
-          <div>
-            <p class="author-name">Seun B.</p>
-            <p class="author-meta">Port Harcourt · Just Because</p>
-          </div>
-        </div>
-      </div>
+      <a href="https://x.com/Alexandrafloral"
+         target="_blank"
+         class="contact-card">
+         <span>𝕏</span>
+         <h3>X</h3>
+      </a>
+
+      <a href="https://www.facebook.com/profile.php?id=61583596942140"
+         target="_blank"
+         class="contact-card">
+         <span>📘</span>
+         <h3>Facebook</h3>
+      </a>
     </div>
   </div>
 </section>
@@ -475,8 +278,6 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
-      <!-- Brand -->
-
       <!-- Quick Links -->
       <nav class="footer-nav">
         <h4>Quick Links</h4>
@@ -492,8 +293,10 @@
       <div class="footer-hours">
         <h4>Business Hours</h4>
         <ul>
-          <li><span>Monday – Friday</span> <span>8:00 AM – 8:00 PM</span></li>
-          <li><span>Saturday</span> <span>9:00 AM – 6:00 PM</span></li>
+          <li><span>Monday – Friday</span> <span>8:00 AM – 6:00 PM</span></li>
+          <li><span>Saturday</span> <span>9:00 AM – 5:00 PM</span></li>
+          <li><span>Sunday</span> <span>Closed</span></li>
+        </ul>
       </div>
     </div>
 
@@ -505,6 +308,5 @@
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
