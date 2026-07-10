@@ -481,6 +481,14 @@ p { color: white; line-height: 1.75; }
   padding-block: var(--space-3xl);
   width: 100%;
 }
+.hero__content h1{
+  color:#fff;
+  margin-bottom:2rem;
+}
+
+.hero__content h1 em{
+  color:#fff;
+}
 
 /* Logo Upload Area */
 .logo-upload-area {
@@ -505,63 +513,128 @@ p { color: white; line-height: 1.75; }
   text-align: center;
 }
 
-
-/* /* ==========================================
-   FLORAL GALLERY
+/* ==========================================
+   COLLECTIONS
 ========================================== */
 
-.gallery-grid{
-  columns: 3;
-  column-gap: 1.5rem;
+.collection-group{
+  max-width: 1100px;
+  margin: 0 auto 4rem;
 }
 
-.gallery-item{
-  break-inside: avoid;
-  margin-bottom: 1.5rem;
-  overflow: hidden;
-  border-radius: 18px;
-  cursor: pointer;
+.collection-header{
+  text-align: center;
+  margin-bottom: 1.25rem;
 }
 
-.gallery-item img{
-  width: 100%;
+.collection-header h3{
+  font-size: clamp(1.5rem, 3vw, 1.85rem);
+  margin-bottom: .35rem;
+}
+
+.collection-header span{
   display: block;
+  font-size: .85rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+}
+
+.collection-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.collection-grid img{
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+
   border-radius: 18px;
-  transition: transform .6s ease;
-}
-.gallery-item{
-  position:relative;
+
+  transition:
+    transform .4s ease,
+    filter .4s ease;
 }
 
-.gallery-item::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(255,255,255,0);
-  transition:.3s ease;
+.collection-grid img:hover{
+  transform: scale(1.03);
 }
 
-.gallery-item:hover::after{
-  background:rgba(255,255,255,.08);
+.collection-description{
+  max-width: 550px;
+  margin: 1rem auto 0;
+  text-align: center;
+  color: var(--color-text-light);
+  line-height: 1.7;
 }
-.gallery-item:hover img{
-  transform: scale(1.04);
-}
-@media(max-width:900px){
 
-  .gallery-grid{
-    columns:2;
+/* ==========================================
+   CUSTOM ARRANGEMENT CTA
+========================================== */
+
+.collections-cta{
+  max-width: 650px;
+  margin: 5rem auto 0;
+  text-align: center;
+}
+
+.collections-cta h3{
+  margin-bottom: .75rem;
+}
+
+.collections-cta p{
+  color: var(--color-text-light);
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 900px){
+
+  .collection-group{
+    margin-bottom: 3.5rem;
+  }
+
+  .collection-grid{
+    grid-template-columns: repeat(2, 1fr);
   }
 
 }
 
-@media(max-width:600px){
+/* ==========================================
+   MOBILE
+========================================== */
 
-  .gallery-grid{
-    columns:1;
+@media (max-width: 600px){
+
+  .collection-group{
+    margin-bottom: 3rem;
+  }
+
+  .collection-header{
+    margin-bottom: 1rem;
+  }
+
+  .collection-grid{
+    grid-template-columns: 1fr;
+    gap: .85rem;
+  }
+
+  .collection-description{
+    margin-top: .85rem;
+    font-size: .95rem;
+  }
+
+  .collections-cta{
+    margin-top: 4rem;
   }
 
 }
+
+
 /* =====================
    SECTION HEADER
 ===================== */
@@ -604,58 +677,51 @@ p { color: white; line-height: 1.75; }
 }
 
 /* ==========================================
-   location
+   DELIVERY COVERAGE
 ========================================== */
 
-.cities-grid{
+.delivery-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:1.5rem;
+
+  max-width:900px;
+  margin:0 auto;
 }
 
-.city-card{
-  position:relative;
-  height:420px;
-  overflow:hidden;
+.delivery-card{
+  text-align:center;
+
+  padding:2.5rem 1.5rem;
+
+  border:1px solid var(--color-border);
+
   border-radius:20px;
-  cursor:pointer;
+
+  transition:.3s ease;
 }
 
-.city-card img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-  transition:transform .6s ease;
+.delivery-card:hover{
+  transform:translateY(-4px);
 }
 
-.city-card:hover img{
-  transform:scale(1.08);
+.delivery-icon{
+  margin-bottom:1rem;
 }
 
-.city-overlay{
-  position:absolute;
-  inset:0;
-
-  background:linear-gradient(
-    to top,
-    rgba(0,0,0,.7),
-    rgba(0,0,0,.15)
-  );
-
-  display:flex;
-  align-items:flex-end;
-  justify-content:center;
-
-  padding:2rem;
+.delivery-icon i{
+  font-size:1.3rem;
+  color:var(--color-primary);
 }
 
-.city-overlay h3{
-  color:white;
-  font-size:2rem;
-  font-family:var(--font-heading);
-  letter-spacing:0.05em;
-  margin:0;
+.delivery-card h3{
+  margin-bottom:.5rem;
+  font-size:1.4rem;
+}
+
+.delivery-card p{
+  color:var(--color-text-light);
+  font-size:.95rem;
 }
 
 /* ==========================================
@@ -666,7 +732,7 @@ p { color: white; line-height: 1.75; }
   display:grid;
   grid-template-columns:1.1fr 1fr;
   gap:4rem;
-  align-items:center;
+  align-items:start;
 }
 
 .about-content{
@@ -688,12 +754,15 @@ p { color: white; line-height: 1.75; }
 
 .about-block{
   margin-top:2rem;
+
+  padding-left:1.25rem;
+  border-left:2px solid var(--color-primary);
 }
 
 .about-block h3{
   font-family:var(--font-heading);
-  font-size:1.75rem;
-  margin-bottom:.75rem;
+  font-size:1.5rem;
+  margin-bottom:.5rem;
   color:var(--color-text-primary);
 }
 
@@ -748,51 +817,78 @@ p { color: white; line-height: 1.75; }
   }
 
 }
+
+
 /* ==========================================
-   CONTACT
+   SOCIALS — MINIMAL LUXURY
 ========================================== */
 
-.contact-grid{
-  display:grid;
-  grid-template-columns:repeat(5,1fr);
-  gap:1rem;
+.social-section{
+  padding:4rem 0;
 }
 
-.contact-card{
-  background:var(--color-card-bg);
-  border:1px solid var(--color-border);
-  border-radius:18px;
+.social-section .section-header{
+  margin-bottom:2rem;
+}
 
-  padding:2rem 1rem;
+.social-section h2{
+  font-size:clamp(1.75rem,4vw,2.5rem);
+}
+
+.social-links{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:1.75rem;
+}
+
+.social-icon{
+  width:42px;
+  height:42px;
 
   display:flex;
-  flex-direction:column;
   align-items:center;
   justify-content:center;
-
-  text-align:center;
-
-  transition:.3s ease;
-}
-
-.contact-card:hover{
-  transform:translateY(-4px);
-  box-shadow:var(--shadow-md);
-}
-
-.contact-card span{
-  font-size:2rem;
-  margin-bottom:.75rem;
-}
-
-.contact-card h3{
+  color:var(--color-text-light);
   font-size:1.1rem;
+  transition:
+    color .3s ease,
+    transform .3s ease;
 }
 
-.stars {
-  color: #C9A96E;
-  font-size: 1rem;
-  letter-spacing: 2px;
+.social-icon:hover{
+  color:var(--color-text-primary);
+  transform:translateY(-3px);
+}
+
+@keyframes gentleFloat{
+  0%,100%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-4px);
+  }
+}
+
+.social-icon:nth-child(1){
+  animation:gentleFloat 5s ease-in-out infinite;
+}
+
+.social-icon:nth-child(2){
+  animation:gentleFloat 5s ease-in-out infinite .7s;
+}
+
+.social-icon:nth-child(3){
+  animation:gentleFloat 5s ease-in-out infinite 1.4s;
+}
+
+.social-icon:nth-child(4){
+  animation:gentleFloat 5s ease-in-out infinite 2.1s;
+}
+
+.social-icon:nth-child(5){
+  animation:gentleFloat 5s ease-in-out infinite 2.8s;
 }
 
 .testimonial-author {
@@ -971,44 +1067,81 @@ p { color: white; line-height: 1.75; }
   color: var(--color-text-light);
   margin: 0;
 }
-
-/* =========== FLOATING WHATSAPP BUTTON =========== */
-.whatsapp-float {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  padding: 1rem 1.5rem;
-  border-radius: 50px;
-  background-color: var(--color-whatsapp);
-  color: white;
-  border: none;
-  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  cursor: pointer;
-  transition: transform var(--transition), box-shadow var(--transition);
-  z-index: 999;
-  font-family: var(--font-body);
-  font-size: 0.875rem;
-  font-weight: 500;
-  white-space: nowrap;
+.footer-social-minimal{
+  display:flex;
+  justify-content:center;
+  gap:1rem;
+  margin-bottom:1.5rem;
 }
 
-.whatsapp-float:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+.footer-social-minimal a{
+  color:var(--color-text-muted);
+  font-size:.95rem;
+  transition:.3s ease;
 }
 
-.whatsapp-float:active {
-  transform: scale(0.95);
+.footer-social-minimal a:hover{
+  color:var(--color-text-primary);
+}
+/* ==========================================
+   FLOATING WHATSAPP
+========================================== */
+
+.whatsapp-float{
+  position:fixed;
+  right:24px;
+  bottom:24px;
+
+  width:58px;
+  height:58px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:50%;
+
+  background:#25D366;
+  color:white;
+
+  font-size:1.55rem;
+
+  box-shadow:
+    0 10px 25px rgba(37,211,102,.25);
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+
+  z-index:999;
+
+  animation:whatsappPulse 3s infinite;
 }
 
-.floating-whatsapp:hover .whatsapp-label {
-  opacity: 1;
+.whatsapp-float:hover{
+  transform:translateY(-4px);
+
+  box-shadow:
+    0 18px 40px rgba(37,211,102,.35);
 }
 
+@keyframes whatsappPulse{
+
+  0%{
+    box-shadow:
+      0 0 0 0 rgba(37,211,102,.35);
+  }
+
+  70%{
+    box-shadow:
+      0 0 0 16px rgba(37,211,102,0);
+  }
+
+  100%{
+    box-shadow:
+      0 0 0 0 rgba(37,211,102,0);
+  }
+}
 
 
 /* =========== RESPONSIVE =========== */
@@ -1148,13 +1281,7 @@ p { color: white; line-height: 1.75; }
     text-align: center;
   }
 
-  .floating-whatsapp {
-    width: 56px;
-    height: 56px;
-    bottom: 1.5rem;
-    right: 1.5rem;
-  }
-}
+  
 
 @media (max-width: 440px) {
   h1 {
@@ -1172,4 +1299,5 @@ p { color: white; line-height: 1.75; }
   .contact-grid {
     grid-template-columns: 1fr;
   }
+}
 }

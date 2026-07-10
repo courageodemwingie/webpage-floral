@@ -11,6 +11,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+/>
 </head>
 <body>
 <!-- ==================== NAVIGATION ==================== -->
@@ -52,8 +56,9 @@
   href="https://wa.me/message/IPJ3FHFSA4XUF1"
   target="_blank"
   class="whatsapp-float"
-  title="Chat with us on WhatsApp">
-  💬 Chat Us
+  aria-label="Chat on WhatsApp"
+  title="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
 </a>
 
 <!-- ==================== HERO ==================== -->
@@ -73,65 +78,126 @@
   </div>
 </section>
 
-<!-- ==================== BOUQUETS SECTION ==================== -->
 <section class="section-white" id="bouquets">
   <div class="container">
+
     <div class="section-header">
-      <h2>Floral Arrangements</h2>
+      <h2>Our Collections</h2>
       <div class="rule"></div>
       <p>
-        Every arrangement is handcrafted with care and designed
-        to celebrate life's most beautiful moments.
+        Each arrangement is handcrafted to order and can be customised
+        to suit your preferred flowers, colours and occasion.
       </p>
     </div>
+    <!-- MINI -->
+    <div class="collection-group">
 
-    <div class="gallery-grid">
-      <div class="gallery-item">
-        <img src="/asset/photos/bouquet-1.JPG" alt="Floral arrangement 1">
+      <div class="collection-header">
+        <h3>Mini Handheld Bouquets</h3>
+        <span>From ₦35,000</span>
       </div>
-      <div class="gallery-item">
-        <img src="/asset/photos/bouquet-13.jpg" alt="Floral arrangement 2">
+
+      <div class="collection-grid">
+        <img src="/asset/photos/bouquet-1.JPG" alt="">
+        <img src="/asset/photos/bouquet-3.jpg" alt="">
+        <img src="/asset/photos/bouquet-4.jpg" alt="">
       </div>
-      <div class="gallery-item">
-        <img src="/asset/photos/bouquet-3.jpg" alt="Floral arrangement 3">
-      </div>
-      <div class="gallery-item">
-        <img src="/asset/photos/bouquet-4.jpg" alt="Floral arrangement 4">
-      </div>
-      <div class="gallery-item">
-        <img src="/asset/photos/bouquet-5.jpg" alt="Floral arrangement 5">
-      </div>
-      <div class="gallery-item">
-        <img src="/asset/photos/bouquet-6.jpg" alt="Floral arrangement 6">
-      </div>
-      <div class="gallery-item">
-        <img src="/asset/photos/bouquet-7.jpg" alt="Floral arrangement 7">
-      </div>
-      <div class="gallery-item">
-        <img src="/asset/photos/bouquet-8.jpg" alt="Floral arrangement 8">
-      </div>
-      <div class="gallery-item">
-        <img src="/asset/photos/bouquet-9.jpg" alt="Floral arrangement 9">
-      </div>
-      <div class="gallery-item">
-        <img src="/asset/photos/bouquet-10.jpg" alt="Floral arrangement 10">
-      </div>
-      <div class="gallery-item">
-        <img src="/asset/photos/bouquet-11.jpg" alt="Floral arrangement 11">
-      </div>
-      <div class="gallery-item">
-        <img src="/asset/photos/bouquet-12.jpg" alt="Floral arrangement 12">
-      </div>
-      <div class="gallery-item">
-        <img src="/asset/photos/bouquet-13.jpg" alt="Floral arrangement 13">
-      </div>
-      <div class="gallery-item">
-        <img src="/asset/photos/bouquet-14.jpg" alt="Floral arrangement 14">
-      </div>
-      <div class="gallery-item">
-        <img src="/asset/photos/bouquet-15.jpg" alt="Floral arrangement 15">
-      </div>
+
+      <p class="collection-description">
+        Perfect for thoughtful gestures, birthdays and everyday gifting.
+      </p>
+
     </div>
+
+    <!-- MIDI -->
+
+    <div class="collection-group">
+
+      <div class="collection-header">
+        <h3>Midi Handheld Bouquets</h3>
+        <span>From ₦85,000</span>
+      </div>
+
+      <div class="collection-grid">
+        <img src="/asset/photos/bouquet-5.jpg" alt="">
+        <img src="/asset/photos/bouquet-6.jpg" alt="">
+        <img src="/asset/photos/bouquet-7.jpg" alt="">
+      </div>
+
+      <p class="collection-description">
+        A fuller arrangement designed for celebrations and memorable moments.
+      </p>
+
+    </div>
+
+    <!-- LARGE -->
+
+    <div class="collection-group">
+
+      <div class="collection-header">
+        <h3>Large Handheld Bouquets</h3>
+        <span>From ₦350,000</span>
+      </div>
+
+      <div class="collection-grid">
+        <img src="/asset/photos/bouquet-8.jpg" alt="">
+        <img src="/asset/photos/bouquet-9.jpg" alt="">
+        <img src="/asset/photos/bouquet-10.jpg" alt="">
+      </div>
+
+      <p class="collection-description">
+        Statement bouquets created to leave a lasting impression.
+      </p>
+
+    </div>
+
+    <!-- BRIDAL -->
+
+    <div class="collection-group">
+
+      <div class="collection-header">
+        <h3>Bridal Bouquets</h3>
+        <span>From ₦60,000</span>
+      </div>
+
+      <div class="collection-grid">
+        <img src="/asset/photos/bouquet-11.jpg" alt="">
+        <img src="/asset/photos/bouquet-12.jpg" alt="">
+        <img src="/asset/photos/bouquet-13.jpg" alt="">
+      </div>
+
+      <p class="collection-description">
+        Elegant bouquets crafted to complement your special day.
+      </p>
+
+    </div>
+
+    <!-- WREATHS -->
+
+    <div class="collection-group">
+
+      <div class="collection-header">
+        <h3>Wreaths</h3>
+        <span>From ₦65,000</span>
+      </div>
+
+      <div class="collection-grid">
+        <img src="/asset/photos/bouquet-13.jpg" alt="">
+        <img src="/asset/photos/bouquet-14.jpg" alt="">
+        <img src="/asset/photos/bouquet-15.jpg" alt="">
+      </div>
+
+      <p class="collection-description">
+        Beautiful floral tributes created with care and respect.
+      </p>
+
+    </div>
+
+    <div class="collections-cta">
+
+  <h3>Looking for something custom? Chat Us</h3>
+</div>
+
   </div>
 </section>
 
@@ -139,37 +205,46 @@
 <section class="section-white">
   <div class="container">
     <div class="section-header">
-      <span class="label">Our Locations</span>
-      <h2>Serving Multiple Cities</h2>
+<h2>Where We Deliver ?</h2>
       <div class="rule"></div>
       <p>
         Alexandra's Floral proudly serves customers across
         Ibadan, Lagos and Abuja.
       </p>
     </div>
-    <div class="cities-grid">
-      <!-- IBADAN -->
-      <div class="city-card">
-        <img src="/asset/photos/ibadan-moko-pic.jpg" alt="Ibadan">
-        <div class="city-overlay">
-          <h3>Ibadan</h3>
-        </div>
-      </div>
-      <!-- LAGOS -->
-      <div class="city-card">
-        <img src="/asset/photos/lagos-pic.jpg" alt="Lagos">
-        <div class="city-overlay">
-          <h3>Lagos</h3>
-        </div>
-      </div>
-      <!-- ABUJA -->
-      <div class="city-card">
-        <img src="/asset/photos/abuja-pic.jpg" alt="Abuja">
-        <div class="city-overlay">
-          <h3>Abuja</h3>
-        </div>
-      </div>
+   <div class="delivery-grid">
+
+  <div class="delivery-card">
+    <div class="delivery-icon">
+      <i class="fa-solid fa-location-dot"></i>
     </div>
+
+    <h3>Ibadan</h3>
+
+    <p>Delivery available</p>
+  </div>
+
+  <div class="delivery-card">
+    <div class="delivery-icon">
+      <i class="fa-solid fa-location-dot"></i>
+    </div>
+
+    <h3>Lagos</h3>
+
+    <p>Same-day delivery available</p>
+  </div>
+
+  <div class="delivery-card">
+    <div class="delivery-icon">
+      <i class="fa-solid fa-location-dot"></i>
+    </div>
+
+    <h3>Abuja</h3>
+
+    <p>Same-day delivery available</p>
+  </div>
+
+</div>
   </div>
 </section>
 
@@ -227,50 +302,44 @@
 </section>
 
 <!-- ==================== CONTACT ==================== -->
-<section class="section-white" id="contact">
+<section class="section-white social-section" id="contact">
   <div class="container">
+
     <div class="section-header">
-      <span class="label">Contact Us</span>
-      <h2>Check out our social media</h2>
-      <div class="rule"></div>
+      <h2>Follow Us </h2>
     </div>
 
-    <div class="contact-grid">
-      <a href="https://wa.me/message/IPJ3FHFSA4XUF1"
+    <div class="social-links">
+
+      <a href="https://www.facebook.com/profile.php?id=61583596942140"
          target="_blank"
-         class="contact-card">
-         <span>💬</span>
-         <h3>WhatsApp</h3>
+         aria-label="Facebook"
+         class="social-icon facebook">
+         <i class="fab fa-facebook-f"></i>
       </a>
 
       <a href="https://www.instagram.com/alexandrafloral_/"
          target="_blank"
-         class="contact-card">
-         <span>📸</span>
-         <h3>Instagram</h3>
-      </a>
-
-      <a href="https://www.tiktok.com/@alexandrasfloral"
-         target="_blank"
-         class="contact-card">
-         <span>🎵</span>
-         <h3>TikTok</h3>
+         aria-label="Instagram"
+         class="social-icon instagram">
+         <i class="fab fa-instagram"></i>
       </a>
 
       <a href="https://x.com/Alexandrafloral"
          target="_blank"
-         class="contact-card">
-         <span>𝕏</span>
-         <h3>X</h3>
+         aria-label="X"
+         class="social-icon x">
+         <i class="fab fa-x-twitter"></i>
       </a>
 
-      <a href="https://www.facebook.com/profile.php?id=61583596942140"
+      <a href="https://www.tiktok.com/@alexandrasfloral"
          target="_blank"
-         class="contact-card">
-         <span>📘</span>
-         <h3>Facebook</h3>
+         aria-label="TikTok"
+         class="social-icon tiktok">
+         <i class="fab fa-tiktok"></i>
       </a>
     </div>
+
   </div>
 </section>
 
@@ -301,6 +370,11 @@
     </div>
 
     <div class="footer-bottom">
+      <div class="footer-social-minimal">
+  <a href="https://www.instagram.com/alexandrafloral_/"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.facebook.com/profile.php?id=61583596942140"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://x.com/Alexandrafloral"><i class="fab fa-x-twitter"></i></a>
+</div>
       <p>© 2024 Alexandra's Floral. All rights reserved.</p>
       <p>Made with ♥ for beautiful moments.</p>
     </div>
